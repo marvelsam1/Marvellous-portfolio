@@ -1,22 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      'white': '#ffffff',
-      'black': '#242424',
-      'gray': '##808080',
-      'lightGray': '#cdcdcd',
-      'lightBlue': '#CAF0F8',
-      // 'lightBlue': '#63D4D5',
-      'lightGreen': '#fefec0',
-      'deepBlue': '#1D4646'
+      white: "#ffffff",
+      black: "#242424",
+      lightGreen: "#64ffda",
+      gray: "#808080", // ❌ You had double ## here
+      lightGray: "#cdcdcd",
+      lightBlue: "#CAF0F8",
+      deepBlue: "#1D4646",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        sfmono: ["JetBrains Mono Variable", "monospace"],
+      },
+    },
   },
   plugins: [],
-}
-
+};
