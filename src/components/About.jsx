@@ -96,6 +96,13 @@ const About = () => {
         </ul>
         <div></div>
       </div>
+      <div className="md:hidden block">
+        <img
+          className="rounded-md"
+          src="assets/Mr Marvellous cropped.jpg"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
